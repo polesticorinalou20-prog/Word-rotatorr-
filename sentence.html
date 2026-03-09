@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sentence</title>
+<style>
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8d0;
+  overflow: hidden;
+  text-align: center;
+}
+p{
+  font-size:130px;
+  color:#aa7a2a;
+  max-width:80%;
+  margin:0;
+}
+/* Bubbles */
+.bubble{position:absolute;border-radius:50%;background: rgba(255,255,255,0.35); box-shadow:0 0 15px rgba(255,255,255,0.5); animation: float 8s ease-in-out infinite alternate;}
+.bubble1{width:250px;height:250px;top:10%;left:10%;}
+.bubble2{width:180px;height:180px;top:70%;left:80%;}
+.bubble3{width:120px;height:120px;top:50%;left:50%;transform:translate(-50%,-50%);}
+.bubble4{width:100px;height:100px;top:20%;left:80%;}
+.bubble5{width:140px;height:140px;top:75%;left:25%;}
+.bubble6{width:80px;height:80px;top:60%;left:60%;}
+@keyframes float{from{transform:translateY(0) scale(1);opacity:0.6;} to{transform:translateY(-50px) scale(1.1);opacity:1;}}
+
+/* Sparkles */
+.sparkle{position:absolute;width:8px;height:8px;background: rgba(255,255,255,0.9); border-radius:50%; box-shadow:0 0 8px rgba(255,255,255,0.9); animation:sparkleAnim 4s linear infinite;}
+.sparkle1{top:15%;left:25%;animation-delay:0s;}
+.sparkle2{top:50%;left:70%;animation-delay:1s;}
+.sparkle3{top:35%;left:45%;animation-delay:2s;}
+.sparkle4{top:70%;left:20%;animation-delay:3s;}
+.sparkle5{top:80%;left:60%;animation-delay:4s;}
+.sparkle6{top:20%;left:80%;animation-delay:2s;}
+.sparkle7{top:60%;left:40%;animation-delay:1s;}
+.sparkle8{top:40%;left:10%;animation-delay:3s;}
+@keyframes sparkleAnim{0%{transform:translate(0,0) scale(1);opacity:1;}50%{transform:translate(60px,-60px) scale(1.7);opacity:0.7;}100%{transform:translate(-50px,-100px) scale(1);opacity:0;}}
+</style>
+</head>
+<body>
+
+<!-- Bubbles -->
+<div class="bubble bubble1"></div>
+<div class="bubble bubble2"></div>
+<div class="bubble bubble3"></div>
+<div class="bubble bubble4"></div>
+<div class="bubble bubble5"></div>
+<div class="bubble bubble6"></div>
+
+<!-- Sparkles -->
+<div class="sparkle sparkle1"></div>
+<div class="sparkle sparkle2"></div>
+<div class="sparkle sparkle3"></div>
+<div class="sparkle sparkle4"></div>
+<div class="sparkle sparkle5"></div>
+<div class="sparkle sparkle6"></div>
+<div class="sparkle sparkle7"></div>
+<div class="sparkle sparkle8"></div>
+
+<p>Our love felt magical, but it was evanescent—gone before I could hold onto it.</p>
+
+<script>
+setTimeout(function(){ window.location.href="word.html"; },10000);
+</script>
+
+</body>
+</html>
